@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0px;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  nav {
+    background-color: papayawhip;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+  }
+  
+  main {
+    margin-top: 58px;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: thistle;
+  }
+  
+  .relative-position {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    background-color: peru;
+    left: 100px;
+    top: 50px;
+  }
+  
+  .absolute-position {
+    position: absolute;
+    width: 75px;
+    height: 50px;
+    background-color: dodgerblue;
+    top: 50px;
+    left: 50px;
+  }
