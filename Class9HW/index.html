@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+  <div class="button-container">
+    <button onclick="changeMyText()">Change Text</button>
+    <button onclick="color()">Change Color</button>
+    <button onclick="bold()">Bold</button>
+    <button onclick="hide()">Hide</button>
+    <button onclick="reveal()">Reveal</button>
+    
+  </div>
+
+  <h1 id="docHeader">Goodbye, world!</h1>
+  <script>
+    var docHeader = document.getElementById("docHeader");
+    var changeMyText = function(){
+
+      var myText = "Hi World!";
+      docHeader.innerHTML = myText;
+    }
+    var color = function(){
+      var red = Math.random()*255;
+      var green  = Math.random()*255;
+      var blue = Math.random()*255;
+      var RGBval = "rgb(" + red + ", " + green + ", " + blue + ")";
+      docHeader.style.color = RGBval;
+    }
+    var bold = function(){
+      docHeader.style.fontFamily = "Impact,Charcoal,sans-serif";
+    }
+    function hideMy() {
+      docHeader.style.display='none'
+    }
+    function reveal() {
+      docHeader.style.display='block'
+    }
+    
+  </script>
+</body>
+</html>
