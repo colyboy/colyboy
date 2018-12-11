@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    position: relative;
+}
+
+.jur {
+    background-color: rgb(217, 255, 0);
+    position: absolute;
+    width: 25%;
+}
+
+.emp {
+    background-color: #6a74ff;
+    position: absolute;
+    width: 25%;
+    left: 25%;
+}
+
+.rptd {
+    background-color: rgb(255, 0, 212);
+    position: absolute;
+    width: 25%;
+    left: 50%;
+}
+
+.anl {
+    background-color: rgb(21, 255, 0);
+    position: absolute;
+    width: 25%;
+    left: 75%;
+}
+
+@media screen and (max-width: 768px) {
+
+.clm1, .clm2 {
+    width: 50%;
+    font-size: 150%;
+}
+
+.clm2 {
+    left: 50%;
+}
+
+    .clm3, .clm4 {
+    display: none;
+}
+
+}
